@@ -1,0 +1,8 @@
+#sidePanel {
+    /* border: 1pt; */
+    border-color: red;
+    border-width: 3pt;
+    width: 100pt;
+    height: 100pt;
+    background-color: rosybrown;
+}
