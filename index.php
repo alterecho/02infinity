@@ -2,7 +2,7 @@
 <html class="fullheight">
     <head>
     <title>We are infinity</title>
-            <?php  require('html/headers.php'); ?>
+            <?php  require('headers.php'); ?>
     </head>
     <body class="fullHeight" onload="onLoadBody()">
         <div id="sideNavBar">

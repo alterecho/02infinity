@@ -22,7 +22,7 @@ function loadPage(page, divID){
 }
 
 function loadMainPage() {
-    loadPage("html/pages/home.html", "content")
+    // loadPage("html/pages/home.html", "content")
 }
 
 function loadGamesPage() {
@@ -44,8 +44,7 @@ function loadAboutPage() {
 function addSideBar() {
     console.log("addSideBar")
     const sideBarDiv = document.getElementById("sideNavBar");
-    const htmlDir = "html"
-    const pagesDir = htmlDir + "/pages"
+    const pagesDir = "."
     sideBarDiv.innerHTML = "<ul>\
         <li><a href=" + pagesDir + "/home.php" + " onclick='loadMainPage()'>Home</a></li>\
         <li><a href=" + pagesDir + "/home.php" + " onclick='loadGamesPage()'>Games</a></li>\
