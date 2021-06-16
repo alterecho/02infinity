@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html class="fullheight">
     <head>
-        <?php require('components/headers.php'); ?>
+        <?php require('headers.php'); ?>
     </head>
 
     <body class="fullHeight" onload="onLoadBody()">
@@ -9,7 +9,7 @@
 
         </div>
         <div id="content">
-            
+            HOME
         </div>
     </body>
 </html>

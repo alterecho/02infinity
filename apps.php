@@ -8,9 +8,8 @@
         <div id="sideNavBar">
 
         </div>
-        in PHP~!S
-
         <div id="content">
+            <p>Apps</p>
         </div>
     </body>
 </html>

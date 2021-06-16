@@ -17,12 +17,12 @@ function loadPage(page, divID){
     // xhr.send(null);
     contentDiv.innerHTML = '<object type="text/html" data=' + page +'></object>';
     // contentDiv.innerHTML = '<object type="text/html" data="html/pages/home.html"></object>';
-    // contentDiv.innerHTML = 'Hello';
+    contentDiv.innerHTML = 'Hello';
     console.log(contentDiv)
 }
 
 function loadMainPage() {
-    // loadPage("html/pages/home.html", "content")
+    loadPage("html/pages/home.html", "content")
 }
 
 function loadGamesPage() {
@@ -46,11 +46,12 @@ function addSideBar() {
     const sideBarDiv = document.getElementById("sideNavBar");
     const pagesDir = "."
     sideBarDiv.innerHTML = "<ul>\
-        <li><a href=" + pagesDir + "/home.php" + " onclick='loadMainPage()'>Home</a></li>\
-        <li><a href=" + pagesDir + "/home.php" + " onclick='loadGamesPage()'>Games</a></li>\
-        <li><a href=" + pagesDir + "/home.php" + " onclick='loadAppsPage()'>Apps</a></li>\
-        <li><a href=" + pagesDir + "/home.php" + " onclick='loadArticlesPage()'>Articles</a></li>\
-        <li><a href=" + pagesDir + "/home.php" + " onclick='loadAboutPage()'>About</a> (And get in touch)</li>\
+        <li><a href='' onclick='loadMainPage()'>Home</a></li>\
+        <li><a href=" + pagesDir + "/home.php" + ">Games</a></li>\
+        <li><a href=" + pagesDir + "/articles.php" + ">Articles</a></li>\
+        <li><a href=" + pagesDir + "/games.php" + ">Games</a></li>\
+        <li><a href=" + pagesDir + "/apps.php" + ">Apps</a></li>\
+        <li><a href=" + pagesDir + "/about.php" + ">About</a> (And get in touch)</li>\
     </ul>";
 }
 
