@@ -3,3 +3,7 @@ html, body {
     height: 100%;
     margin-left: 0pt;
 }
+
+#mainContent {
+    margin: 10pt;
+}

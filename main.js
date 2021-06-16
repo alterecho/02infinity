@@ -47,7 +47,6 @@ function addSideBar() {
     const pagesDir = "."
     sideBarDiv.innerHTML = "<ul>\
         <li><a href='' onclick='loadMainPage()'>Home</a></li>\
-        <li><a href=" + pagesDir + "/home.php" + ">Games</a></li>\
         <li><a href=" + pagesDir + "/articles.php" + ">Articles</a></li>\
         <li><a href=" + pagesDir + "/games.php" + ">Games</a></li>\
         <li><a href=" + pagesDir + "/apps.php" + ">Apps</a></li>\

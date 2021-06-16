@@ -8,8 +8,27 @@
         <div id="sideNavBar">
 
         </div>
-        <div id="content">
+        <div id="mainContent">
             <p>Articles</p>
+            <!-- <p> -->
+                <ul>
+                    <li>
+                        <a href="https://02infinity.medium.com/really-understanding-swift-some-keyword-and-swift-opaque-types-consequently-ae87b3e2efe4">
+                            Understanding Swift Opaque types
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://02infinity.medium.com/understanding-swift-protocol-associated-types-ca717d091b56">
+                            Understanding Swift protocol's associated types
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://02infinity.medium.com/swifts-mutating-and-nonmutating-keywords-db49adbdcf1c">
+                            Swift's mutating and non-mutating keywords
+                        </a>
+                    </li>
+                </ul>
+            <!-- </p> -->
         </div>
     </body>
 </html>

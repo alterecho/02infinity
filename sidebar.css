@@ -1,12 +1,10 @@
 #sideNavBar {
-    border-color: red;
-    border-width: 3pt;
     width: 30%;
     height: 100%;
     background-color: rosybrown;
     text-align: right;
     float: left;
-    padding-right: 10pt;
+    padding-right: 0pt;
 
 }
 

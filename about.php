@@ -8,8 +8,20 @@
         <div id="sideNavBar">
 
         </div>
-        <div id="content">
+        <div id="mainContent">
             <p>HOME</p>
+            <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/vijay-chandran-jayachandran-575141a9/">
+                            LinkedIn
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/alterecho">
+                            Github
+                        </a>
+                    </li>                    
+            </ul>
         </div>
     </body>
 </html>
