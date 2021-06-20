@@ -9,7 +9,11 @@
 
         </div>
         <div id="content">
-            HOME
+            <p>HOME</p>
+            <p>
+                What better reason to exist than to be a programmer? 
+                <br/>Hence I am.
+            </p>
         </div>
     </body>
 </html>
