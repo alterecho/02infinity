@@ -9,18 +9,22 @@
 
         </div>
         <div id="mainContent">
-            <p>HOME</p>
+            <div id="page-title">About ME</div>
+            <p>
+                What better reason to exist than to be a programmer? 
+                <br/>Hence I am.
+            </p>
             <ul>
-                    <li>
-                        <a href="https://www.linkedin.com/in/vijay-chandran-jayachandran-575141a9/">
-                            LinkedIn
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/alterecho">
-                            Github
-                        </a>
-                    </li>                    
+                <li>
+                    <a href="https://www.linkedin.com/in/vijay-chandran-jayachandran-575141a9/">
+                        LinkedIn
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/alterecho">
+                        Github
+                    </a>
+                </li>                    
             </ul>
         </div>
     </body>

@@ -9,12 +9,13 @@
 
         </div>
         <div id="mainContent">
-            <p>Articles</p>
+            <div id="page-title">Articles I've written</div>
+            <p>Learn something you may not know, and interests you...</p>
             <!-- <p> -->
                 <ul>
                     <li>
                         <a href="https://02infinity.medium.com/really-understanding-swift-some-keyword-and-swift-opaque-types-consequently-ae87b3e2efe4">
-                            Understanding Swift Opaque types
+                            <code>Understanding</code> Swift Opaque types
                         </a>
                     </li>
                     <li>
@@ -27,6 +28,12 @@
                             Swift's mutating and non-mutating keywords
                         </a>
                     </li>
+                    <li>
+                        <a href="https://02infinity.medium.com/understanding-swifts-unknown-and-frozen-attribute-f9801ae3b97e">
+                            Understanding Swift’s @unknown and @frozen attribute
+                        </a>
+                    </li>
+
                 </ul>
             <!-- </p> -->
         </div>

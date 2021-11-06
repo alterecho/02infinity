@@ -9,7 +9,7 @@
 
         </div>
         <div id="mainContent">
-            <p>Games</p>
+            <div id="page-title">Games I have developed...</div>
             <ul>
             <li>
                 Impact Horizon

@@ -11,7 +11,7 @@
 
     </div>
     <div id="mainContent">
-        <p>Apps</p>
+        <div id="page-title">Apps I have had a hand in...</div>
 
         <ul>
             <li>
@@ -41,10 +41,6 @@
             <li>
                 UEFEvent
                 <a href="https://itunes.apple.com/us/app/uef-trade-summit-2015/id1047544266?mt=8">Apple app store</a>
-            </li>
-            <li>
-                Impact Horizon
-                <a href="http://itunes.apple.com/app/id672606891">Apple app store</a>
             </li>
             <li>
                 Image Compare:

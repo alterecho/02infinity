@@ -8,8 +8,8 @@
         <div id="sideNavBar">
 
         </div>
-        <div id="content">
-            <p>HOME</p>
+        <div id="mainContent">
+            <div id="page-title">HOME</div>
             <p>
                 What better reason to exist than to be a programmer? 
                 <br/>Hence I am.

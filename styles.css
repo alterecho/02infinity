@@ -2,8 +2,54 @@ html, body {
     min-height: 100%;
     height: 100%;
     margin-left: 0pt;
+    background-color: rgb(34, 29, 40);
+    color:  rgb(180, 175, 182);
+    font-family: 'Courier New', Courier, monospace;
 }
 
-#mainContent {
-    margin: 10pt;
+a {
+    text-decoration: none;
+    color:  rgb(180, 175, 182);
 }
+
+
+#mainContent {
+    float: left;
+    width: auto;
+    margin-left: 10pt;
+}
+
+#page-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 32pt;
+}
+
+#innerContent {
+
+}
+
+#sideNavBar {
+    width: 30%;
+    height: 100%;
+    background-color: rgb(57, 54, 59);
+    text-align: right;
+    color: rgb(163, 160, 165);
+    float: left;
+    padding-right: 10pt;
+}
+
+#sideNavBar ul {
+    list-style-type: none;
+}
+
+#sideNavBar a:hover {
+    background-color: skyblue;
+}
+
+/* #sidebar li a {
+    text-decoration: underline;
+    display: block;
+    width: 100%;
+    height: 100%;
+} */
