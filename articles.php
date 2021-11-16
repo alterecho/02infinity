@@ -3,38 +3,19 @@
     <head>
         <title>We are infinity</title>
         <?php require('headers.php'); ?>
+        <script src="articles.js"></script>
     </head>
-    <body class="fullHeight" onload="onLoadBody()">
+    <body class="fullHeight" onload="currentPage.onLoad()">
         <div id="sideNavBar">
 
         </div>
         <div id="mainContent">
-            <div id="page-title">Articles I've written</div>
+            <div id="page-title">Learn</div>
             <p>Learn something you may not know, and interests you...</p>
             <!-- <p> -->
-                <ul>
-                    <li>
-                        <a href="https://02infinity.medium.com/really-understanding-swift-some-keyword-and-swift-opaque-types-consequently-ae87b3e2efe4">
-                            <code>Understanding</code> Swift Opaque types
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://02infinity.medium.com/understanding-swift-protocol-associated-types-ca717d091b56">
-                            Understanding Swift protocol's associated types
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://02infinity.medium.com/swifts-mutating-and-nonmutating-keywords-db49adbdcf1c">
-                            Swift's mutating and non-mutating keywords
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://02infinity.medium.com/understanding-swifts-unknown-and-frozen-attribute-f9801ae3b97e">
-                            Understanding Swift’s @unknown and @frozen attribute
-                        </a>
-                    </li>
+            <div id="list-articles">
 
-                </ul>
+            </div>
             <!-- </p> -->
         </div>
     </body>

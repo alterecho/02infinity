@@ -25,6 +25,13 @@ a {
     font-size: 32pt;
 }
 
+<<<<<<< HEAD
+#innerContent {
+
+}
+
+=======
+>>>>>>> 6dcb6c7 (Overhaul to black-grey theme, added @frozen article)
 #sideNavBar {
     width: 30%;
     height: 100%;
