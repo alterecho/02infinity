@@ -4,6 +4,13 @@ $db_user = "root";
 $db_pass = "01234567";
 $db_name = "1stdb";
 
+function printConsole($op) {
+    if (is_array($op)) {
+        $op = implode(", ", $op);
+    }
+    echo "<script>console.log('$op')</script>";
+}
+
 abstract class Response {
 
 }
@@ -89,7 +96,7 @@ class Article extends JSONArrayResponse {
     }
 }
 
-header('Content-type: application/json');
+// header('Content-type: application/json');
 
 $key_query = "query";
 $query_articles = "articles";
