@@ -18,5 +18,21 @@
             </div>
             <!-- </p> -->
         </div>
+
+<script>
+    const url = "http://localhost:8000/server.php";
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", url, true);
+    xhr.onload = () => {
+        console.log("onLoad");
+        console.log("xhr.response", xhr.response);
+    }
+
+    xhr.onerror = () => {
+        console.log("error")
+    }
+    xhr.send();
+</script>
+
     </body>
 </html>
