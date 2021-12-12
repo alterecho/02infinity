@@ -1,4 +1,6 @@
 <?php
+require_once("response.php");
+
 $db_host = "localhost:3306";
 $db_user = "root";
 $db_pass = "01234567";
@@ -11,58 +13,7 @@ function printConsole($op) {
     echo "<script>console.log('$op')</script>";
 }
 
-abstract class Response {
 
-}
-
-class ArrayResponse extends Response {
-    protected $data = array();
-
-    function __construct($array) {
-        $this->data = $array;
-    }
-
-    function response() {
-        return $this->data;
-    }
-}
-
-class JSONArrayResponse extends ArrayResponse {
-    function response() {
-        $json = json_encode($this->data);
-        return $json;
-    }
-}
-
-class ListResponse {
-    protected $key_count = "count";
-    protected $key_data = "data";
-
-    protected $count = 0;
-    protected $data = array();
-
-    function __construct($data_array) {
-        $this->count = count($data_array);
-        $this->data = $data_array;
-    }
-
-    function response() {
-        return array(
-            $this->key_count => $this->count,
-            $this->key_data => $this->data
-        );
-    }
-}
-
-class JSONListResponse extends ListResponse {
-    // function __construct($array) {
-    //     parent::__construct($array);
-    // }
-    function response() {
-        $response = parent::response();
-        return json_encode($response);
-    }
-}
 
 class Article extends JSONArrayResponse {
     private $key_title = "title";
@@ -98,17 +49,33 @@ class Article extends JSONArrayResponse {
 
 // header('Content-type: application/json');
 
-$key_query = "query";
-$query_articles = "articles";
-// $qry = get($key);
+class KEY {
+    public static $isDebugging = "isDebugging";
+    public static $query = "query";
+    public static $query_articles = "articles";         
+}
 
-if (array_key_exists($key_query, $_GET)) {
-    if ($_GET[$key_query] == $query_articles) {
-        $response = getArticles();
+// $qry = get($key);
+$isDebugging = false;
+
+if (array_key_exists(KEY::$isDebugging, $_GET)) {
+    $isDebugging = true;
+}
+
+if (array_key_exists(KEY::$query, $_GET)) {    
+    if ($_GET[KEY::$query] == KEY::$query_articles) {
+        if ($isDebugging) {
+            $response = getArticles_STUB();
+        } else {
+            $response = getArticles();
+        }
     }
 }
 
-echo $response;
+if (isset($response)) {
+    echo $response;
+}
+
 
 function get($key)
 {
@@ -162,6 +129,19 @@ function printAllPOST()
 //     }
 // }
 // mysqli_close(($conn));
+
+function getArticles_STUB() {
+    $articles = array();
+
+    for ($i = 0; $i < 10; $i++) {
+        $article = new Article(array(
+            "title" => "article $i", "url" => "google.com/$i", "date" => "sdd/$i"
+        ));
+        array_push($articles, $article);
+    }
+    $jsonsArrayResponse = new JSONListResponse($articles);
+    return $jsonsArrayResponse->response();
+}
 
 function getArticles()
 {
